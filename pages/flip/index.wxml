@@ -1,0 +1,15 @@
+<navigation-bar title="flip 翻转" color="black" background="#FFF"></navigation-bar>
+<view class="page-wrap">
+  <view class="item">
+    <view class="title">flip x</view>
+    <view class="flip-x" catch:tap="flipx">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="title">flip y</view>
+    <view class="flip-y" catch:tap="flipy">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+</view>

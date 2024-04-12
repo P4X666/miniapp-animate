@@ -1,0 +1,9 @@
+<navigation-bar title="小程序动画" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view >
+  <view>fade 淡入淡出</view>
+  <view>bounce 弹跳类</view>
+  <view>zoom 缩放类</view>
+  <view>rotate 旋转类</view>
+  <view>flip 翻转类</view>
+  <view>strong 强调类</view>
+</view>

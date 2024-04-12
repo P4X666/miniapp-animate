@@ -1,0 +1,15 @@
+<navigation-bar title="slide 滑动" color="black" background="#FFF"></navigation-bar>
+<view class="page-wrap">
+  <view class="item">
+    <view class="title">slide up</view>
+    <view class="slide-up" catch:tap="slideUp">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="title">slide down</view>
+    <view class="slide-down" catch:tap="slideDown">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+</view>

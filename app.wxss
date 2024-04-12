@@ -1,0 +1,19 @@
+.page-wrap {
+  padding-top: 96rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  width: 600rpx;
+  font-weight: bold;
+}
+.demo-card {
+  width: 120rpx;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FBF38C;
+}

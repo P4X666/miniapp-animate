@@ -1,0 +1,17 @@
+<navigation-bar title="rotate 旋转" color="black" background="#FFF"></navigation-bar>
+<view class="page-wrap">
+  <view class="item">
+    <view class="title">rotate</view>
+    <view class="rotate" catch:tap="rotate">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="title">rotate right</view>
+    <view class="rotate-right" catch:tap="rotateRight">
+      <view class="text">rotate 旋转</view>
+      <view class="line"></view>
+      <view class="demo-card {{startRotate?'rotate-scroll':''}}"></view>
+    </view>
+  </view>
+</view>

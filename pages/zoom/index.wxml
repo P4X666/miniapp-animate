@@ -1,0 +1,15 @@
+<navigation-bar title="zoom 缩放" color="black" background="#FFF"></navigation-bar>
+<view class="page-wrap">
+  <view class="item">
+    <view class="title">zoom in</view>
+    <view class="zoom-in" catch:tap="zoomin">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="title">zoom out</view>
+    <view class="zoom-out" catch:tap="zoomout">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+</view>

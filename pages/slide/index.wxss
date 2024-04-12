@@ -1,0 +1,6 @@
+.slide-up{
+  height: 500rpx;
+}
+.slide-down >.demo-card {
+  height: 500rpx;
+}

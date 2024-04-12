@@ -1,0 +1,6 @@
+<navigation-bar title="小程序动画" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view class="page-wrap">
+  <block wx:for="{{list}}" wx:key="*this">
+    <view class="item {{'item'+index}}" catch:tap="onItemClick" data-url="{{item}}">{{item}}</view>
+  </block>
+</view>

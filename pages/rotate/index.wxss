@@ -1,0 +1,31 @@
+@keyframes rotate-scroll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-scroll {
+  animation: 1s linear infinite rotate-scroll;
+}
+
+.rotate-right{
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  height: 160rpx;
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+}
+.line {
+  height: 2rpx;
+  background-color: #eee;
+}
+.text{
+  position: absolute;
+  opacity: 0;
+  bottom: 30rpx;
+}

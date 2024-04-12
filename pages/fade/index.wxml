@@ -1,0 +1,22 @@
+<navigation-bar title="fade 淡入淡出" color="black" background="#FFF"></navigation-bar>
+<view class="page-wrap">
+  <view class="item">
+    <view class="title">fadein</view>
+    <view class="fade-in" catch:tap="fadein">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="title">fadeout</view>
+    <view class="fade-out" catch:tap="fadeout">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="title">fadeinBottom</view>
+    <view class="fade-in-bottom" catch:tap="fadeinBottom">
+      <view class="demo-card"></view>
+    </view>
+  </view>
+  
+</view>
