@@ -1,0 +1,38 @@
+<!--components/nine-palaces-lottery/index.wxml-->
+<view class="wrap wd-flex wd-flex-wrap wd-justify-between wd-items-center">
+  <block wx:for="{{prizes.length > 0?prizes:9}}" wx:key="id">
+    <view 
+      wx:if="{{index===4}}" 
+      class="item btn {{status===0?'wd-text-primary':'wd-text-light-grey'}} wd-w-180 wd-h-180 wd-mb-16 wd-rounded-16 wd-flex-c-c wd-bg-dark-grey wd-text-72 wd-font-bold wd-leading-120"
+      bind:tap="start"
+      >
+      GO
+    </view>
+    <block wx:else>
+      <view 
+        class="item wd-relative wd-w-180 wd-h-180 wd-mb-16 wd-rounded-16 wd-bg-white wd-text-center"
+        data-id="{{item.id}}"
+      >
+        <view class="wd-w-164 wd-h-132 wd-inline-flex wd-justify-center">
+          <image class="wd-w-full wd-h-full" src="{{item.image}}" mode="aspectFit" />
+        </view>
+        <view 
+          class="wd-text-20 wd-truncate wd-px-24 wd-font-bold wd-absolute-top wd-top-132"
+        >{{item.text}}</view>
+        <view 
+          wx:if="{{status===1&&current!==index}}"
+          class="wd-absolute-full mask wd-rounded-16"
+        ></view>
+      </view>
+    </block>
+  </block>
+</view>
+<wxs module="getCurrentIndex">
+function getCurrentIndex(index) {
+    if(index<4){
+      return index
+    }
+    return index-1
+}
+module.exports = getCurrentIndex;
+</wxs>
