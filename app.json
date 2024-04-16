@@ -5,7 +5,8 @@
     "pages/zoom/index",
     "pages/rotate/index",
     "pages/flip/index",
-    "pages/slide/index"
+    "pages/slide/index",
+    "pages/canvas/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

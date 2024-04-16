@@ -8,6 +8,7 @@ Page({
       'zoom 缩放',
       'rotate 旋转',
       'flip 翻转',
+      'canvas 动态绘制',
     ]
   },
   onLoad() {
